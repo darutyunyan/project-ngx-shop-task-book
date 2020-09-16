@@ -5,6 +5,8 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   templateUrl: './footer.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FooterComponent {
 
+export class FooterComponent {
+  public author = 'Angular Course';
+  public currentYear: number = new Date().getFullYear();
 }
